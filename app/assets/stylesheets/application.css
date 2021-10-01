@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ h1 {
+    font-family:'Courier New', Courier, monospace;
+    color: #DB7093;
+ }
+
+ .title__form {
+    color: #DB7093; 
+ }
+
+ label {
+     color: #DB7093;
+ }
+
+ input[type="text"] {
+     width: 200px;
+     height: 20px;
+     border-radius: 10px;
+ }
+
+ input[type="submit"] {
+     width: 150px;
+     height: 25px;
+     background-color: #FFC0CB;
+     font-weight: bold;
+     border: transparent;
+     border-radius: 30px;
+ }
+
+ input[type="submit"]:hover {
+     color: white;
+     background-color: #DB7093;
+ }
+
+ a {
+     color: #696969;
+     font-weight: bold;
+     width: 30px;
+     height: 10px;
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: #FFC0CB;
+     background-color: transparent;
+ }
+
+ strong {
+    color: #DB7093;
+ }
