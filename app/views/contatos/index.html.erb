@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="header__contatos" >Contatos</h1>
+<h1 class="header__contatos">Lista de Contatos</h1>
 
 <table>
   <thead>
@@ -14,11 +14,11 @@
   <tbody class="info__contact">
     <% @contatos.each do |contato| %>
       <tr>
-        <td><%= contato.nome %></td>
-        <td><%= contato.telefone %></td>
-        <td class="button__edit"><%= link_to 'Show', contato %></td>
-        <td class="button__edit"><%= link_to 'Edit', edit_contato_path(contato) %></td>
-        <td class="button__edit"><%= link_to 'Destroy', contato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="title__contact"><%= contato.nome %></td>
+        <td class="title__contact"><%= contato.telefone %></td>
+        <td class="button__edit"><%= link_to 'Mostrar', contato %></td>
+        <td class="button__edit"><%= link_to 'Editar', edit_contato_path(contato) %></td>
+        <td class="button__edit"><%= link_to 'Destruir', contato, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Contato', new_contato_path %>
+<%= link_to 'Novo Contato', new_contato_path %>
