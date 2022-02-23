@@ -1,24 +1,5 @@
-# README
+## Minha Agenda
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Agenda de contatos onde você consegue adicionar, editar, excluir e visualizar nome e telefone de uma pessoa. Feito com o objetivo de estudar Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
