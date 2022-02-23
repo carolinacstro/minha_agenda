@@ -42,8 +42,4 @@ Rails.application.configure do
 
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-
-
-
-  Rails.env = 'development'
 end
