@@ -3356,3 +3356,40 @@ Processing by ContatosController#index as HTML
 Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.3ms | Allocations: 4589)
 
 
+Started GET "/" for ::1 at 2022-02-23 16:34:33 -0300
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ContatosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contatos/index.html.erb within layouts/application
+  [1m[36mContato Load (2.1ms)[0m  [1m[34mSELECT "contatos".* FROM "contatos"[0m
+  ↳ app/views/contatos/index.html.erb:15
+  Rendered contatos/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 4266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 277.5ms | Allocations: 30224)
+Completed 200 OK in 329ms (Views: 289.6ms | ActiveRecord: 2.8ms | Allocations: 34087)
+
+
+Started GET "/contatos/new" for ::1 at 2022-02-23 16:34:36 -0300
+Processing by ContatosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contatos/new.html.erb within layouts/application
+  Rendered contatos/_form.html.erb (Duration: 44.3ms | Allocations: 4180)
+  Rendered contatos/new.html.erb within layouts/application (Duration: 48.5ms | Allocations: 4529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 7919)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 8462)
+
+
+Started GET "/contatos" for ::1 at 2022-02-23 16:34:38 -0300
+Processing by ContatosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contatos/index.html.erb within layouts/application
+  [1m[36mContato Load (0.3ms)[0m  [1m[34mSELECT "contatos".* FROM "contatos"[0m
+  ↳ app/views/contatos/index.html.erb:15
+  Rendered contatos/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 818)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 4208)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.3ms | Allocations: 4614)
+
+
